@@ -1,0 +1,9 @@
+export 'package:univalle_estereo/widgets/alerta_conectividad.dart';
+export 'package:univalle_estereo/widgets/banner_info.dart';
+export 'package:univalle_estereo/widgets/consultando.dart';
+export 'package:univalle_estereo/widgets/contacto.dart';
+export 'package:univalle_estereo/widgets/disco_rotante.dart';
+export 'package:univalle_estereo/widgets/fade_image.dart';
+export 'package:univalle_estereo/widgets/posts_info.dart';
+export 'package:univalle_estereo/widgets/reproductor_info_bottom.dart';
+export 'package:univalle_estereo/widgets/verificando_conexion.dart';
