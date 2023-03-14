@@ -48,6 +48,10 @@ class _MsjBienvenida extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final CheckConectionProvider checkConectionProvider =
+        Provider.of<CheckConectionProvider>(
+      context,
+    );
     return Container(
       decoration: const BoxDecoration(
           color: Colors.white,
@@ -62,11 +66,7 @@ class _MsjBienvenida extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '¡Hola Compa!',
-                style: Theme.of(context).textTheme.headlineSmall,
-              ),
-              Text(
-                'disfruta de',
+                'Disfruta de',
                 style: Theme.of(context).textTheme.titleLarge,
               ),
               Text(
@@ -118,9 +118,6 @@ class _MsjBienvenida extends StatelessWidget {
                     onPressed: () {
                       final RadioOnlineProvider radioOnlineProvider =
                           Provider.of<RadioOnlineProvider>(context,
-                              listen: false);
-                      final CheckConectionProvider checkConectionProvider =
-                          Provider.of<CheckConectionProvider>(context,
                               listen: false);
                       if (checkConectionProvider.connectionStatus ==
                           ConnectionStatus.online) {
