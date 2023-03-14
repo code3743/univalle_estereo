@@ -1,7 +1,7 @@
 # Univalle Estéreo
 
-Aplicación no oficial que permite escuchar la trasmisión en vivo de la emisora de la Universidad del Valle.
+Aplicación oficial de la emisora Univalle Estéreo, en la cual permite escuchar la trasmisión en vivo y estar al tanto de los ultimos post publicados en su sitio web.
 
-Desarrollo activo, **version 1.0.0**
+Desarrollo activo, **version 1.0.1**
 
 
