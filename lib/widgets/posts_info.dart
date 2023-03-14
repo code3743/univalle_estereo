@@ -110,9 +110,20 @@ class NoticiaItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
         width: 200,
         height: 200,
+        clipBehavior: Clip.antiAlias,
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(20),
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.grey.shade200,
+                  blurRadius: 4,
+                  spreadRadius: 1.5,
+                  offset: const Offset(1, 5))
+            ]),
         child: Column(
           children: [
             Expanded(
@@ -128,11 +139,7 @@ class NoticiaItem extends StatelessWidget {
             ),
             Container(
               height: 80,
-              decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(20),
-                      bottomRight: Radius.circular(20)),
-                  color: Colors.red),
+              color: Colors.red,
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
